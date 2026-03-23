@@ -1,0 +1,59 @@
+WEB Application Development using MERN Stack
+ADITYA University 6
+b. Write a HTML program to explain the working of hyperlinks using <a> tag and href, target
+attributes.
+Note: Use text to link → https://www.aec.edu.in/
+Use image to link → https://www.aec.edu.in/?p=Gallery
+<a> Tag (Anchor Tag)
+ The <a> tag is used to create hyperlinks in HTML.
+ Anything inside the <a> tag (text, image, or other content) becomes clickable.
+ Syntax:
+<a href="URL">Clickable Text or Image</a>
+href Attribute (Hypertext Reference)
+ The href attribute specifies the URL of the page or resource you want to link to.
+ Example:
+<a href="https://www.aec.edu.in/">Visit AEC</a>
+ Without href, the <a> tag won’t link anywhere.
+target Attribute
+ The target attribute defines where to open the linked page.
+ Common values:
+o _blank → Opens the link in a new tab or window.
+o _self → Opens the link in the same tab (default).
+ Example:
+<a href="https://www.aec.edu.in/" target="_blank">AEC Website</a>
+ <a> → creates a link
+ href → tells the link where to go
+ target → tells where to open the link
+<!DOCTYPE html>
+<html lang="en">
+WEB Application Development using MERN Stack
+ADITYA University 7
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyperlinks Example</title>
+</head>
+<body>
+<h1>Hyperlinks Example</h1>
+<!-- Text link -->
+<p>
+Visit our official website:
+<a href="https://www.aec.edu.in/" target="_blank">AEC Website</a>
+</p>
+<!-- Image link -->
+<p>
+Click the image to see our gallery:
+<a href="https://www.aec.edu.in/?p=Gallery" target="_blank">
+<img src="https://www.aec.edu.in/wp-content/uploads/2020/10/logo.png"
+alt="AEC Gallery"
+width="200">
+</a>
+</p>
+<p>Explanation:</p>
+<ul>
+<li><strong>href</strong>: Specifies the URL of the page to link to.</li>
+<li><strong>target="_blank"</strong>: Opens the link in a new tab/window.</li>
+<li>You can use text or an image inside the <code>&lt;a&gt;</code> tag to create a clickable link.</li>
+</ul>
+</body>
+</html>
