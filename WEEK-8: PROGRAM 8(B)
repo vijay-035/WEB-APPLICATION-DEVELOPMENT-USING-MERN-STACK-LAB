@@ -1,0 +1,13 @@
+pm install express express-session body-parser
+const express = require('express');
+const session = require('express-session');
+const bodyParser = require('body-parser');
+const app = express();
+const PORT = 3000;
+// middleware
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(session({
+secret: "mysecretkey",
+resave: false,
+saveUninitialized: false
+}));
